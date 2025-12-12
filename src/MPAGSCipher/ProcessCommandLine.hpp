@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include "CipherMode.hpp"
 
 /**
  * \file ProcessCommandLine.hpp
@@ -25,7 +26,7 @@ struct ProgramSettings {
     /// Key to be used in encrypting/decrypting routine
     std::string cipherKey;
     /// Flag indicating whether the cipher should encrypt (true) or decrypt (false)
-    bool encrypt{true};
+    CipherMode encrypt{CipherMode::Encrypt};
 };
 
 /**
